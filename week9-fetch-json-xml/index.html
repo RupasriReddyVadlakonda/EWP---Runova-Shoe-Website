@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Week 9 - Parse JSON / XML</title>
+<style>
+  table { border-collapse: collapse; margin-top: 10px; }
+  td, th { border: 1px solid #666; padding: 6px 12px; }
+  th { background: #eee; }
+</style>
+</head>
+<body>
+<h2>Parse JSON / XML Response</h2>
+<button onclick="loadJSON()">Load JSON</button>
+<button onclick="loadXML()">Load XML</button>
+<table id="tbl"></table>
+
+<script>
+function render(rows) {
+  document.getElementById("tbl").innerHTML =
+    "<tr><th>Name</th><th>Brand</th><th>Size</th><th>Color</th><th>Price</th></tr>" +
+    rows.map(r => `<tr><td>${r.name}</td><td>${r.brand}</td><td>${r.size}</td><td>${r.color}</td><td>Rs. ${r.price}</td></tr>`).join("");
+}
+
+async function loadJSON() {
+  const res = await fetch("shoes.json");
+  const data = await res.json();
+  render(data);
+}
+
+async function loadXML() {
+  const res = await fetch("shoes.xml");
+  const text = await res.text();
+  const xml = new DOMParser().parseFromString(text, "application/xml");
+  const get = (el, tag) => el.getElementsByTagName(tag)[0].textContent;
+
+  const rows = [];
+  for (const s of xml.getElementsByTagName("shoe")) {
+    rows.push({
+      name: get(s, "name"), brand: get(s, "brand"),
+      size: get(s, "size"), color: get(s, "color"), price: get(s, "price")
+    });
+  }
+  render(rows);
+}
+</script>
+</body>
+</html>

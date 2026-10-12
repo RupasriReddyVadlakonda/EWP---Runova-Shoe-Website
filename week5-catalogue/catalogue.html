@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StepUp Shoes - Catalogue</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>StepUp Shoes</h1>
+        <p>Find the perfect pair for every step</p>
+    </header>
+    <nav>
+        <a href="../week3-css/home.html">Home</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="../week3-css/login.html">Login</a>
+        <a href="../week3-css/register.html">Register</a>
+    </nav>
+
+    <div class="container wide">
+        <h2>Shoe Catalogue</h2>
+
+        <div class="filters">
+            <input type="text" id="search" placeholder="Search by name or brand">
+            <select id="category">
+                <option value="">All Categories</option>
+                <option>Sports</option>
+                <option>Running</option>
+                <option>Casual</option>
+                <option>Sneakers</option>
+                <option>Formal</option>
+            </select>
+            <select id="gender">
+                <option value="">All Genders</option>
+                <option>Men</option>
+                <option>Women</option>
+                <option>Unisex</option>
+            </select>
+            <select id="sort">
+                <option value="">Sort by</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+                <option value="name">Name: A to Z</option>
+            </select>
+            <span class="cart-info">Cart: <span id="cartCount">0</span> items | Rs. <span id="cartTotal">0</span></span>
+        </div>
+
+        <div class="grid" id="shoeGrid"></div>
+        <p class="no-result" id="noResult" style="display:none;">No shoes found.</p>
+    </div>
+
+    <footer>&copy; 2026 StepUp Shoes</footer>
+    <script src="js/catalogue.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+[
+  {"id":"S101","name":"Air Max 270","brand":"Nike","size":9,"color":"Black","price":8999},
+  {"id":"S102","name":"Ultraboost 22","brand":"Adidas","size":7,"color":"White","price":9999},
+  {"id":"S103","name":"Suede Classic","brand":"Puma","size":8,"color":"Blue","price":5499},
+  {"id":"S104","name":"Chuck Taylor All Star","brand":"Converse","size":9,"color":"Red","price":4499}
+]

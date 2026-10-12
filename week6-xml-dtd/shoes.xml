@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE shoes SYSTEM "shoes.dtd">
+
+<shoes>
+
+    <shoe id="S101">
+        <name>Air Max 270</name>
+        <brand>Nike</brand>
+        <category>Sports</category>
+        <gender>Men</gender>
+        <size>9</size>
+        <color>Black</color>
+        <price>8999</price>
+        <stock>20</stock>
+    </shoe>
+
+    <shoe id="S102">
+        <name>Ultraboost 22</name>
+        <brand>Adidas</brand>
+        <category>Running</category>
+        <gender>Women</gender>
+        <size>7</size>
+        <color>White</color>
+        <price>9999</price>
+        <stock>15</stock>
+    </shoe>
+
+    <shoe id="S103">
+        <name>Suede Classic</name>
+        <brand>Puma</brand>
+        <category>Casual</category>
+        <gender>Unisex</gender>
+        <size>8</size>
+        <color>Blue</color>
+        <price>5499</price>
+        <stock>25</stock>
+    </shoe>
+
+    <shoe id="S104">
+        <name>Chuck Taylor All Star</name>
+        <brand>Converse</brand>
+        <category>Sneakers</category>
+        <gender>Unisex</gender>
+        <size>9</size>
+        <color>Red</color>
+        <price>4499</price>
+        <stock>30</stock>
+    </shoe>
+
+</shoes>

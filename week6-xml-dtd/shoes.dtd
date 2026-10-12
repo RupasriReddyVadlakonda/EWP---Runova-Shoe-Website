@@ -1,0 +1,13 @@
+<!ELEMENT shoes (shoe+)>
+
+<!ELEMENT shoe (name, brand, category, gender, size, color, price, stock)>
+<!ATTLIST shoe id ID #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT brand (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT size (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT stock (#PCDATA)>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>StepUp Shoes</h1>
+        <p>Find the perfect pair for every step</p>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+
+    <div class="container">
+        <!-- INLINE CSS -->
+        <h2 style="text-align:center;">Student Registration Form</h2>
+
+        <form action="#" method="post">
+            <label>Full Name:</label>
+            <input type="text" name="fullname" required minlength="3">
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Password:</label>
+            <input type="password" name="password" required minlength="6">
+
+            <label>Phone Number:</label>
+            <input type="tel" name="phone" pattern="[0-9]{10}" required>
+
+            <label>Date of Birth:</label>
+            <input type="date" name="dob" required>
+
+            <label>Gender:</label>
+            <div style="margin-bottom:14px;">
+                <input type="radio" name="gender" value="Male" required> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other
+            </div>
+
+            <label>Course:</label>
+            <select name="course" required>
+                <option value="">--Select Course--</option>
+                <option>B.Tech</option>
+                <option>B.Sc</option>
+                <option>BCA</option>
+                <option>B.Com</option>
+                <option>MCA</option>
+            </select>
+
+            <label>Address:</label>
+            <textarea name="address" rows="4" required></textarea>
+
+            <label>Hobbies:</label>
+            <div style="margin-bottom:14px;">
+                <input type="checkbox" name="hobby" value="Sports"> Sports
+                <input type="checkbox" name="hobby" value="Reading"> Reading
+                <input type="checkbox" name="hobby" value="Music"> Music
+            </div>
+
+            <input type="checkbox" required> I agree to the Terms and Conditions
+            <br><br>
+
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+    <footer>&copy; 2026 StepUp Shoes</footer>
+</body>
+</html>

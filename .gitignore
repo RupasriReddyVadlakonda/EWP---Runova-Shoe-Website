@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.angular/
+*.js.map
+.DS_Store
+# compiled output of Week 11
+week11-typescript/*.js

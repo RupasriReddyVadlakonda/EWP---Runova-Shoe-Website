@@ -1,0 +1,45 @@
+/* ---------- EXTERNAL CSS ---------- */
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; background: #f4f6f8; color: #222; }
+
+header { background: #1f2937; color: #fff; padding: 15px 0; text-align: center; }
+header h1 { margin: 0; letter-spacing: 2px; }
+header p { margin: 4px 0 0; color: #d1d5db; font-style: italic; }
+
+nav { background: #c0392b; text-align: center; }
+nav a { display: inline-block; color: #fff; text-decoration: none; padding: 12px 20px; font-weight: bold; }
+nav a:hover { background: #922b21; }
+
+.container { max-width: 800px; margin: 25px auto; padding: 25px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.1); }
+h2 { color: #c0392b; border-bottom: 2px solid #eee; padding-bottom: 8px; }
+
+form label { font-weight: bold; display: block; margin-bottom: 4px; }
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=date], select, textarea {
+    width: 100%; padding: 9px; border: 1px solid #bbb; border-radius: 5px; font-size: 14px; margin-bottom: 14px;
+}
+input:focus, select:focus, textarea:focus { outline: none; border-color: #c0392b; box-shadow: 0 0 4px rgba(192,57,43,.4); }
+
+input[type=submit], input[type=reset], button { background: #c0392b; color: #fff; border: none; padding: 10px 22px; border-radius: 5px; cursor: pointer; font-size: 15px; }
+input[type=reset] { background: #6b7280; }
+input[type=submit]:hover, button:hover { background: #922b21; }
+
+footer { text-align: center; padding: 15px; color: #6b7280; font-size: 13px; }
+.error { color: #dc2626; font-size: 12px; display: block; margin: -10px 0 10px; min-height: 14px; }
+
+/* ---------- Catalogue page ---------- */
+.wide { max-width: 1100px; }
+.filters { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 20px; }
+.filters input, .filters select { width: auto; margin: 0; min-width: 160px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; }
+.card { border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform .2s, box-shadow .2s; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 6px 16px rgba(0,0,0,.15); }
+.card .pic { height: 120px; display: flex; align-items: center; justify-content: center; font-size: 56px; }
+.card .info { padding: 12px 14px; }
+.card h3 { margin: 0 0 4px; font-size: 17px; }
+.card .meta { color: #6b7280; font-size: 13px; margin: 2px 0; }
+.card .price { font-weight: bold; color: #c0392b; font-size: 18px; margin: 8px 0; }
+.card button { width: 100%; }
+.card button:disabled { background: #9ca3af; cursor: not-allowed; }
+.badge { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 10px; background: #fee2e2; color: #b91c1c; }
+.cart-info { margin-left: auto; font-weight: bold; }
+.no-result { text-align: center; color: #6b7280; padding: 30px; }
